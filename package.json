@@ -1,0 +1,30 @@
+{
+  "name": "mvc-trolls",
+  "version": "1.0.0",
+  "description": "A simple MVC server for getting troll data!",
+  "main": "app.js",
+  "scripts": {
+    "test": "none",
+    "start": "node",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinUSCU/mvc-trolls.git"
+  },
+  "author": "Kevin Springer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinUSCU/mvc-trolls/issues"
+  },
+  "homepage": "https://github.com/KevinUSCU/mvc-trolls#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
