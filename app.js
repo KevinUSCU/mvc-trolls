@@ -3,10 +3,10 @@ const app = express()
 const port = process.env.PORT || 3000
 app.disable('x-provided-by')
 
-const bodyParser = require('body-parser')
-app.use(bodyParser.json())
 const morgan = require('morgan')
 app.use(morgan('dev'))
+const bodyParser = require('body-parser')
+app.use(bodyParser.json())
 
 const trollsRoutes = require('./src/routes/trolls-routes')
 app.use('/trolls', trollsRoutes)

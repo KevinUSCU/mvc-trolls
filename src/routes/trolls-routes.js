@@ -8,4 +8,6 @@ router.post('/', ctrl.create)
 router.put('/:id', ctrl.update)
 router.delete('/:id', ctrl.del)
 
+router.post('/random/:number', ctrl.randomTrolls)
+
 module.exports = router
