@@ -58,7 +58,7 @@ function create(body) {
     response = { errors: { status, message } }
   } else {
     const troll = { id: uuid(), name, type, color, numBridges }
-    troll.push(troll)
+    trolls.push(troll)
     response = troll
   }
 
@@ -67,7 +67,7 @@ function create(body) {
 
 function update(id, body) {
   const troll = trolls.find(troll => troll.id === id)
-console.log(troll)
+  
   let response
   if (!troll) {
     let status = 404
